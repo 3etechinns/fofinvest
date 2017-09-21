@@ -4,7 +4,7 @@
 
 @endsection
 
-@section('title', '| Account')
+@section('title', 'Account')
 
 @section('content')
 <div class="row">
@@ -128,7 +128,12 @@
 			<div class="card-footer">
 				<hr />
 				<div class="stats">
-					<i class="ti-calendar"></i> Total Deposits
+					<i class="ti-calendar"></i> Total Deposits				
+					<div class="pull-right">
+						<a href="deposits/cashin" class="btn btn-info btn-fill btn-icon btn-sm">
+							Cash In
+						</a>
+					</div>					
 				</div>
 			</div>
 	    </div>
@@ -154,6 +159,11 @@
 				<hr />
 				<div class="stats">
 					<i class="ti-calendar"></i> Total Withdrawals
+					<div class="pull-right">
+						<a href="#" class="btn btn-success btn-fill btn-icon btn-sm">
+							Cash Out
+						</a>
+					</div>						
 				</div>
 			</div>
 	    </div>

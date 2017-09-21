@@ -4,7 +4,7 @@
 
 @endsection
 
-@section('title', '| Withdrawals')
+@section('title', 'Withdrawals')
 
 @section('content')
 <div class="row">

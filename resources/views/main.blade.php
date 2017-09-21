@@ -15,6 +15,9 @@
                             <span class="icon-bar bar2"></span>
                             <span class="icon-bar bar3"></span>
                         </button>
+                        <a class="navbar-brand" href="/{{ Request::path() }}">
+                            @yield('title')
+                        </a>
                     </div>
                     @include('partials._navbar')
                 </div>

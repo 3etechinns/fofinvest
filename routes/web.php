@@ -11,7 +11,11 @@
 |
 */
 
+
 Route::get('/', function () {
+    return view('navbar.home');
+});
+Route::get('/home', function () {
     return view('navbar.home');
 });
 
@@ -27,46 +31,55 @@ Route::get('/faq', function () {
     return view('navbar.faq');
 });
 
-Route::get('/account', function () {
-    return view('pages.account');
-});
 
-Route::get('/mypackage', function () {
-    return view('pages.mypackage');
-});
+Route::group( ['middleware' => 'auth' ], function()
+{
+    Route::get('/account', function () {
+        return view('pages.account');
+    });
 
-Route::get('/buypackage', function () {
-    return view('pages.buypackage');
-});
+    Route::get('/mypackage', function () {
+        return view('pages.mypackage');
+    });
 
-Route::get('/earnings', function () {
-    return view('pages.earnings');
-});
+    Route::get('/buypackage', function () {
+        return view('pages.buypackage');
+    });
+
+    Route::get('/earnings', function () {
+        return view('pages.earnings');
+    });
 
 
-Route::get('/deposits', function () {
-    return view('pages.deposits');
-});
+    //Deposits Section
+    Route::get('/deposits', function () {
+        return view('pages.deposits.deposits');
+    });
 
-Route::get('/withdrawals', function () {
-    return view('pages.withdrawals');
-});
+    Route::get('/deposits/cashin', function () {
+        return view('pages.deposits.cashin');
+    });
 
-Route::get('/users', function () {
-    return view('pages.users');
-});
+    Route::get('/withdrawals', function () {
+        return view('pages.withdrawals');
+    });
 
-Route::get('/groups', function () {
-    return view('pages.groups');
-});
+    Route::get('/users', function () {
+        return view('pages.users');
+    });
 
-Route::get('/profile', function () {
-    return view('pages.profile');
-});
+    Route::get('/groups', function () {
+        return view('pages.groups');
+    });
 
-Route::get('/settings', function () {
-    return view('pages.settings');
+    Route::get('/profile', function () {
+        return view('pages.profile');
+    });
+
+    Route::get('/settings', function () {
+        return view('pages.settings');
+    });
 });
 
 Auth::routes();
-Route::get('/home', 'HomeController@index')->name('home');
+// Route::get('/home', 'HomeController@index')->name('home');

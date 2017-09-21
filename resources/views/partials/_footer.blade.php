@@ -16,25 +16,25 @@
 <script src="{{ asset('js/jquery.validate.min.js') }}"></script>
 
 <!-- Promise Library for SweetAlert2 working on IE -->
-<script src="{{ asset('js/es6-promise-auto.min.js') }}"></script>
+<!-- <script src="{{ asset('js/es6-promise-auto.min.js') }}"></script> -->
 
 <!--  Plugin for Date Time Picker and Full Calendar Plugin-->
-<script src="{{ asset('js/moment.min.js') }}"></script>
+<!-- <script src="{{ asset('js/moment.min.js') }}"></script> -->
 
 <!--  Date Time Picker Plugin is included in this js file -->
-<script src="{{ asset('js/bootstrap-datetimepicker.js') }}"></script>
+<!-- <script src="{{ asset('js/bootstrap-datetimepicker.js') }}"></script> -->
 
 <!--  Select Picker Plugin -->
-<script src="{{ asset('js/bootstrap-selectpicker.js') }}"></script>
+<!-- <script src="{{ asset('js/bootstrap-selectpicker.js') }}"></script> -->
 
 <!--  Switch and Tags Input Plugins -->
 <script src="{{ asset('js/bootstrap-switch-tags.js') }}"></script>
 
 <!-- Circle Percentage-chart -->
-<script src="{{ asset('js/jquery.easypiechart.min.js') }}"></script>
+<!-- <script src="{{ asset('js/jquery.easypiechart.min.js') }}"></script> -->
 
 <!--  Charts Plugin -->
-<script src="{{ asset('js/chartist.min.js') }}"></script>
+<!-- <script src="{{ asset('js/chartist.min.js') }}"></script> -->
 
 <!--  Notifications Plugin    -->
 <script src="{{ asset('js/bootstrap-notify.js') }}"></script>
@@ -43,16 +43,19 @@
 <script src="{{ asset('js/sweetalert2.js') }}"></script>
 
 <!-- Vector Map plugin -->
-<script src="{{ asset('js/jquery-jvectormap.js') }}"></script>
+<!-- <script src="{{ asset('js/jquery-jvectormap.js') }}"></script> -->
 
 <!-- Wizard Plugin    -->
 <script src="{{ asset('js/jquery.bootstrap.wizard.min.js') }}"></script>
 
 <!--   Sharrre Library    -->
-<script src="{{ asset('js/jquery.sharrre.js') }}"></script>
+<!-- <script src="{{ asset('js/jquery.sharrre.js') }}"></script> -->
 
 <!-- Paper Dashboard PRO Core javascript and methods for Demo purpose -->
 <script src="{{ asset('js/paper-dashboard.js') }}"></script>
 
-@yield('scripts')
+<script src="{{ asset('js/vue.js') }}"></script>
+<script src="{{ asset('js/axios.min.js') }}"></script>
+
+@yield('script')
 </html>

@@ -4,7 +4,7 @@
 
 @endsection
 
-@section('title', '| Buy Package')
+@section('title', 'Buy Package')
 
 @section('content')
 <div class="row">

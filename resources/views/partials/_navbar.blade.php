@@ -20,12 +20,12 @@
                                     FAQ
                                 </a>
                             </li>
-                            <li>
-                                <a href="/account" class="dropdown-toggle btn-magnify">
-                                    Account
-                                </a>
-                            </li>
-                            @if(Auth::check())                            
+                            @if(Auth::check())
+                                <li>
+                                    <a href="/account" class="dropdown-toggle btn-magnify">
+                                        Account
+                                    </a>
+                                </li>                                               
 	                            <li>
 	                                <a href="/logout"
 	                                    onclick="event.preventDefault();
