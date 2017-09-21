@@ -50,6 +50,20 @@ Route::group( ['middleware' => 'auth' ], function()
         return view('pages.earnings');
     });
 
+    //Admin
+    Route::prefix('admin')->group(function () {
+        Route::get('/users', function () {
+            return view('pages.admin.users');
+        });
+
+        Route::get('/groups', function () {
+            return view('pages.admin.groups');
+        });
+        Route::get('/deposit_methods', function () {
+            return view('pages.admin.deposit_methods');
+        });        
+    });
+
 
     //Deposits Section
     Route::get('/deposits', function () {
@@ -62,14 +76,6 @@ Route::group( ['middleware' => 'auth' ], function()
 
     Route::get('/withdrawals', function () {
         return view('pages.withdrawals');
-    });
-
-    Route::get('/users', function () {
-        return view('pages.users');
-    });
-
-    Route::get('/groups', function () {
-        return view('pages.groups');
     });
 
     Route::get('/profile', function () {

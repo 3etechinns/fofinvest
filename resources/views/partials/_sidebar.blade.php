@@ -91,18 +91,38 @@
 	                        <p>Withdrawals</p>
 	                    </a>
 	                </li>
-					<li class="{{ (Request::path()=='users')? 'active':'' }}">
-	                    <a href="/users">
-	                        <i class="ti-bar-chart-alt"></i>
-	                        <p>Users</p>
+
+					<li class="{{ in_array(Request::path(),['admin/users','admin/groups','admin/deposit_methods'])? 'active':'' }}">
+						<a data-toggle="collapse" href="#admin" aria-expanded="true">
+	                        <i class="ti-clipboard"></i>
+	                        <p>
+								Admin
+	                           <b class="caret"></b>
+	                        </p>
 	                    </a>
-	                </li>	
-					<li class="{{ (Request::path()=='groups')? 'active':'' }}">
-	                    <a href="/groups">
-	                        <i class="ti-bar-chart-alt"></i>
-	                        <p>Groups</p>
-	                    </a>
-	                </li>	                                                
+	                    <div class="collapse {{ in_array(Request::path(),['admin/users','admin/groups','admin/deposit_methods'])? 'in':'' }}" id="admin">
+							<ul class="nav">
+								<li class="{{ (Request::path()=='admin/users')? 'active':'' }}">
+									<a href="/admin/users">
+										<span class="sidebar-mini">U</span>
+										<span class="sidebar-normal">Users</span>
+									</a>
+								</li>
+								<li class="{{ (Request::path()=='admin/groups')? 'active':'' }}">
+									<a href="/admin/groups">
+										<span class="sidebar-mini">G</span>
+										<span class="sidebar-normal">Groups</span>
+									</a>
+								</li>		
+								<li class="{{ (Request::path()=='admin/deposit_methods')? 'active':'' }}">
+									<a href="/admin/deposit_methods">
+										<span class="sidebar-mini">DM</span>
+										<span class="sidebar-normal">Deposit Methods</span>
+									</a>
+								</li>														
+	                        </ul>
+	                    </div>
+	                </li>                                               
 	            </ul>
 	    	</div>
 	    </div>
