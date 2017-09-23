@@ -24,7 +24,7 @@
             </nav>
 
 	        <div class="content">
-	        	<div class="container-fluid">
+	        	<div class="container-fluid" id="app" v-cloak>
 	        		@yield('content')
 	        	</div>
 	        </div>

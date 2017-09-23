@@ -2,9 +2,6 @@
 
 @section('style')
 <style type="text/css">
-	[v-cloak] {
-	  display: none;
-	}
 	.card-content li {
 		width: 33.333%;
 	}

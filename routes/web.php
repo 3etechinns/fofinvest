@@ -70,6 +70,13 @@ Route::group( ['middleware' => 'auth' ], function()
         return view('pages.deposits.deposits');
     });
 
+    Route::prefix('deposit_methods')->group(function () {
+        Route::get('/getList', 'DepositMethodController@getList');
+        Route::post('/add', 'DepositMethodController@add');      
+    });
+
+
+
     Route::get('/deposits/cashin', function () {
         return view('pages.deposits.cashin');
     });

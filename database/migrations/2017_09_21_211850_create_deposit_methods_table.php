@@ -19,7 +19,7 @@ class CreateDepositMethodsTable extends Migration
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->string('value', 20);
             $table->string('method', 50);
-            $table->string('receive', 20);
+            $table->string('receive', 50);
             $table->string('identifier', 100);
             $table->string('ref_type', 50);            
             $table->timestamps();
