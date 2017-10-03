@@ -71,11 +71,11 @@ Route::group( ['middleware' => 'auth' ], function()
     });
 
     Route::prefix('deposit_methods')->group(function () {
-        Route::get('/getList', 'DepositMethodController@getList');
-        Route::post('/add', 'DepositMethodController@add');      
+        Route::get('/get_list',  'DepositMethodController@getList');
+        Route::get('/get_owners','DepositMethodController@getOwners');
+        Route::post('/add',      'DepositMethodController@add');
+        Route::delete('/delete/{id}', 'DepositMethodController@delete');
     });
-
-
 
     Route::get('/deposits/cashin', function () {
         return view('pages.deposits.cashin');
