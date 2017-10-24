@@ -857,24 +857,17 @@ module.exports = function normalizeComponent (
     }
   }
 
-<<<<<<< HEAD
-__webpack_require__(9);
-module.exports = __webpack_require__(38);
-=======
   return {
     esModule: esModule,
     exports: scriptExports,
     options: options
   }
 }
->>>>>>> e0798811a67342d8eea0dab8151aa2b7a05ccdc6
 
 
 /***/ }),
 /* 9 */
 /***/ (function(module, exports, __webpack_require__) {
-<<<<<<< HEAD
-=======
 
 __webpack_require__(10);
 module.exports = __webpack_require__(45);
@@ -883,7 +876,6 @@ module.exports = __webpack_require__(45);
 /***/ }),
 /* 10 */
 /***/ (function(module, exports, __webpack_require__) {
->>>>>>> e0798811a67342d8eea0dab8151aa2b7a05ccdc6
 
 
 /**
@@ -900,13 +892,8 @@ __webpack_require__(11);
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-<<<<<<< HEAD
-Vue.component('deposit-methods', __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./components/deposit_methods/DepositMethods.vue\""); e.code = 'MODULE_NOT_FOUND'; throw e; }())));
-Vue.component('add-deposit-method', __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./components/deposit_methods/AddDepositMethod.vue\""); e.code = 'MODULE_NOT_FOUND'; throw e; }())));
-=======
 Vue.component('deposit-methods', __webpack_require__(39));
 Vue.component('add-deposit-method', __webpack_require__(42));
->>>>>>> e0798811a67342d8eea0dab8151aa2b7a05ccdc6
 
 var app = new Vue({
   el: '#app'
@@ -970,13 +957,8 @@ if (token) {
 //     key: 'your-pusher-key'
 // });
 
-<<<<<<< HEAD
-window.Vue = __webpack_require__(35);
-Vue.use(__webpack_require__(36));
-=======
 window.Vue = __webpack_require__(36);
 Vue.use(__webpack_require__(37));
->>>>>>> e0798811a67342d8eea0dab8151aa2b7a05ccdc6
 
 /***/ }),
 /* 12 */
@@ -42006,11 +41988,7 @@ module.exports = Vue$3;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
 
 /***/ }),
-<<<<<<< HEAD
-/* 36 */
-=======
 /* 37 */
->>>>>>> e0798811a67342d8eea0dab8151aa2b7a05ccdc6
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -43112,11 +43090,7 @@ var xhrClient = function (request) {
 
 var nodeClient = function (request) {
 
-<<<<<<< HEAD
-    var client = __webpack_require__(37);
-=======
     var client = __webpack_require__(38);
->>>>>>> e0798811a67342d8eea0dab8151aa2b7a05ccdc6
 
     return new PromiseObj(function (resolve) {
 
@@ -43626,7 +43600,7 @@ if (Component.options.functional) {console.error("[vue-loader] DepositMethods.vu
 
 /* hot reload */
 if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
+  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
   hotAPI.install(require("vue"), false)
   if (!hotAPI.compatible) return
   module.hot.accept()
@@ -43880,7 +43854,7 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-e100bee8", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-e100bee8", module.exports)
   }
 }
 
@@ -43913,7 +43887,7 @@ if (Component.options.functional) {console.error("[vue-loader] AddDepositMethod.
 
 /* hot reload */
 if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
+  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
   hotAPI.install(require("vue"), false)
   if (!hotAPI.compatible) return
   module.hot.accept()
@@ -44371,22 +44345,12 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-8cb4b354", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-8cb4b354", module.exports)
   }
 }
 
 /***/ }),
-<<<<<<< HEAD
-/* 37 */
-=======
 /* 45 */
->>>>>>> e0798811a67342d8eea0dab8151aa2b7a05ccdc6
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 38 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
